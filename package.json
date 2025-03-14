@@ -13,8 +13,15 @@
     "typescript": "^5.8.2",
     "aws-cdk-lib": "2.184.1"
   },
-
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": "./dist/index.js"
+  }
+  ,"typesVersions": {
+    "*": {
+      "*": ["./dist/*"]
+    }
   }
 }
